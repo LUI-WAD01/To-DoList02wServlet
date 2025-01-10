@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="BIG5">
+<title>Todo List</title>
+</head>
+<body>
+	<h1>Todo List</h1>
+	<form action="ToDoServlet" method="post">
+		<input type="text" name="description" placeholder="Enter a task">
+<!-- 		Input type hidden defines a hidden input field, to include data that
+			cannot be seen or modified by users when a form is submitted. -->
+		<input type="hidden" name="action" value="add">
+		<input type="submit" value="Add">
+	</form>
+	<br>
+	<a href="todo.jsp">View To-Do List</a>
+</body>
+</html>
